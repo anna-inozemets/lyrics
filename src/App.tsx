@@ -1,27 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import classNames from 'classnames';
 import './App.scss';
-
-interface Props {
-  onClick: () => void;
-}
-
-export const Provider: React.FC<Props> = React.memo(
-  ({ onClick, children }) => (
-    <button
-      type="button"
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  ),
-);
+import { ThemeSwitcher } from './components/ThemeSwitcher';
+import { ThemeContext } from './components/ThemeContext';
 
 export const App: React.FC = () => {
+  const { isDarkTheme } = useContext(ThemeContext);
+
   return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>
-        <TodoList />
-      </Provider>
+    <div className={classNames('starter', { dark: isDarkTheme })}>
+      <ThemeSwitcher />
     </div>
   );
 };
