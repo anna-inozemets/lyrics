@@ -13,6 +13,9 @@ $star: #fff;
 $cloud: #fefefe;
 
 .switch__wrapper {
+  width: max-content;
+  margin-left: auto;
+
   &-input {
     display: none;
   }

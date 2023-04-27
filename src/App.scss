@@ -1,7 +1,30 @@
-.starter {
-  background-color: antiquewhite;
-}
+@import './utils/_variables.scss';
 
-.starter.dark {
-  background-color: darkblue;
+.content {
+  height: 100vh;
+  width: 100%;
+  background-color: $light-dark-blue;
+
+  &.dark {
+    background-color: $dark-dark-blue;
+  }
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 90vh;
+    width: 95%;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: $light-blue;
+    box-shadow: 0 0 25px 25px rgba(255, 255, 255, 0.6);
+
+    &.dark {
+      background-color: $dark-blue;
+      box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.6);
+    }
+  }
+
 }
