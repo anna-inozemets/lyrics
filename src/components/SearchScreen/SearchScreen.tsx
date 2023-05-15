@@ -1,19 +1,20 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useContext, useState } from 'react';
 import classNames from 'classnames';
 import './SearchScreen.scss';
 import '../../utils/title.scss';
-import { Song } from '../../types/Song';
 import { Loader } from '../Loader';
 import { SearchForm } from '../SearchForm/SearchForm';
 import { ThemeContext } from '../ThemeContext';
-import { getSongByArtist } from '../../api/getSongByArtist';
-import { SongInfo } from '../SongInfo';
+import { getSongsByArtist } from '../../api/getSongsByArtist';
+import { SongsCards } from '../SongsCards';
+import { PartSongInfo } from '../../types/PartSongInfo';
 
 export const SearchScreen = () => {
   const { isDarkTheme } = useContext(ThemeContext);
   const [artist, setArtist] = useState('');
   const [title, setTitle] = useState('');
-  const [songData, setSongData] = useState<Song | null>(null);
+  const [songsData, setSongsData] = useState<PartSongInfo[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
 
@@ -25,12 +26,12 @@ export const SearchScreen = () => {
     setTitle(updatedTitle);
   };
 
-  const loadSongData = async () => {
+  const loadSongsData = async () => {
     try {
       setIsLoading(true);
-      const loadedSongData = await getSongByArtist(artist, title);
+      const loadedSongsData = await getSongsByArtist(artist, title);
 
-      setSongData(loadedSongData);
+      setSongsData(loadedSongsData);
     } catch (error) {
       setIsLoading(false);
       setIsError(true);
@@ -42,7 +43,7 @@ export const SearchScreen = () => {
   const handleSearch = () => {
     setArtist('');
     setTitle('');
-    loadSongData();
+    loadSongsData();
   };
 
   return (
@@ -63,9 +64,7 @@ export const SearchScreen = () => {
           Error occured
         </p>
       )}
-      {songData && (
-        <SongInfo songData={songData} />
-      )}
+      <SongsCards songsData={songsData} />
     </div>
   );
 };
