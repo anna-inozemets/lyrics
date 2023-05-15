@@ -19,7 +19,7 @@ export const App: React.FC = () => {
         <Routes>
           <Route path="*" element={<PageNotFound />} />
           <Route path="/" element={<MainScreen />} />
-          <Route path="lyrics" element={<SearchScreen />} />
+          <Route path="songs" element={<SearchScreen />} />
           <Route path="history" element={<HistoryScreen />} />
           <Route path="/home" element={<Navigate to="/" replace />} />
         </Routes>

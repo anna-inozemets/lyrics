@@ -14,8 +14,8 @@ export const MainScreen:React.FC = () => {
         LyricQuest: Explore and Find Song Lyrics
       </h1>
       <div className="main-screen__link-wrapper">
-        <NavLink to="/lyrics" className={classNames('main-screen__link-button', { dark: isDarkTheme })}>
-          Lyrics
+        <NavLink to="/songs" className={classNames('main-screen__link-button', { dark: isDarkTheme })}>
+          Search
         </NavLink>
         <NavLink to="/history" className={classNames('main-screen__link-button', { dark: isDarkTheme })}>
           History
