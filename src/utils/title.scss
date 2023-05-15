@@ -1,0 +1,9 @@
+@import './variables';
+
+.title {
+  color: $dark-dark-blue;
+
+  &.dark {
+    color: $light-blue;
+  }
+}

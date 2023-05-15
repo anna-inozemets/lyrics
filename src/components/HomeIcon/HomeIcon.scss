@@ -1,0 +1,9 @@
+@import '../../utils/variables';
+
+.home-svg-icon {
+  fill: $dark-dark-blue;
+
+  &.dark {
+    fill: $light-blue;
+  }
+}
