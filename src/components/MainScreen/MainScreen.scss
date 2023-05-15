@@ -9,14 +9,6 @@
     margin-top: 75px;
   }
 
-  &__title {
-    color: $dark-dark-blue;
-
-    &.dark {
-      color: $light-blue;
-    }
-  }
-
   &__link-wrapper {
     display: flex;
     flex-wrap: wrap;
