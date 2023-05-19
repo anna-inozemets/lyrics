@@ -8,6 +8,7 @@ import { HistoryScreen } from './components/HistoryScreen';
 import { SearchScreen } from './components/SearchScreen';
 import { PageNotFound } from './components/PageNotFound';
 import { Header } from './components/Header';
+import { SongPage } from './components/SongPage/SongPage';
 
 export const App: React.FC = () => {
   const { isDarkTheme } = useContext(ThemeContext);
@@ -19,7 +20,10 @@ export const App: React.FC = () => {
         <Routes>
           <Route path="*" element={<PageNotFound />} />
           <Route path="/" element={<MainScreen />} />
-          <Route path="songs" element={<SearchScreen />} />
+          <Route path="songs">
+            <Route index element={<SearchScreen />} />
+            <Route path=":id" element={<SongPage />} />
+          </Route>
           <Route path="history" element={<HistoryScreen />} />
           <Route path="/home" element={<Navigate to="/" replace />} />
         </Routes>

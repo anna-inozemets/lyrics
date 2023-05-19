@@ -34,14 +34,8 @@ export const getSongsByArtist = async (artist: string, songTitle: string) => {
         };
       });
 
-    // eslint-disable-next-line no-console
-    console.log(result);
-
     return result;
   } catch (error) {
-    // eslint-disable-next-line no-console
-    console.log(error);
-
     return [];
   }
 };

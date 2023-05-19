@@ -28,7 +28,7 @@ export const SongCard: React.FC<Props> = ({ songData }) => {
         {title}
       </h2>
       <NavLink to={`/songs/${id}`} className={classNames('song__card__link', { dark: isDarkTheme })}>
-        Get lyrics
+        More info
       </NavLink>
     </div>
   );

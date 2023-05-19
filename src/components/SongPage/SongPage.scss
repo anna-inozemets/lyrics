@@ -1,0 +1,87 @@
+@import '../../utils/variables';
+
+.song-page__content {
+  margin-top: 15px;
+
+  &-additional {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    &-photo-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    &-photo-wrapper img {
+      height: 300px;
+      width: 300px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+  }
+
+  &-text {
+    color: $dark-dark-blue;
+
+    &.dark {
+      color: $light-dark-blue;
+    }
+
+    h2, h3 {
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 42px;
+    }
+
+    h3 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    
+    p {
+      margin-bottom: 30px;
+    }
+
+    p > strong {
+      margin-right: 10px;
+    }
+
+    a {
+      display: block;
+      position: relative;
+      padding-left: 36px;
+      color: $dark-violet;
+
+      &.dark {
+        color: $light-violet;
+      }
+    }
+
+    a:first-of-type {
+      margin-bottom: 10px;
+    }
+
+    a::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 26px;
+      height: 26px;
+      background-image: url('../../images/link.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    a.dark::before {
+      background-image: url('../../images/link--light-color.svg');
+    }
+  }
+}

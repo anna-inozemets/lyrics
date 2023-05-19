@@ -1,0 +1,11 @@
+.video__wrapper {
+  width: max-content;
+  height: max-content;
+  margin: 0 auto;
+  border-radius: 25px;
+  overflow: hidden;
+
+  > div {
+    display: flex;
+  }
+}
