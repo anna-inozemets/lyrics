@@ -1,21 +1,39 @@
 {
   "files": {
-    "main.css": "./static/css/main.91213040.chunk.css",
-    "main.js": "./static/js/main.6caf137f.chunk.js",
-    "main.js.map": "./static/js/main.6caf137f.chunk.js.map",
+    "main.css": "./static/css/main.8533732e.chunk.css",
+    "main.js": "./static/js/main.8765a978.chunk.js",
+    "main.js.map": "./static/js/main.8765a978.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.8c9895b1.js",
     "runtime-main.js.map": "./static/js/runtime-main.8c9895b1.js.map",
-    "static/js/2.786b40d7.chunk.js": "./static/js/2.786b40d7.chunk.js",
-    "static/js/2.786b40d7.chunk.js.map": "./static/js/2.786b40d7.chunk.js.map",
+    "static/css/2.66cbc4d4.chunk.css": "./static/css/2.66cbc4d4.chunk.css",
+    "static/js/2.a1babf98.chunk.js": "./static/js/2.a1babf98.chunk.js",
+    "static/js/2.a1babf98.chunk.js.map": "./static/js/2.a1babf98.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.91213040.chunk.css.map": "./static/css/main.91213040.chunk.css.map",
-    "static/js/2.786b40d7.chunk.js.LICENSE.txt": "./static/js/2.786b40d7.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "./static/media/Sigmar-Regular.daeeaca2.ttf"
+    "static/css/2.66cbc4d4.chunk.css.map": "./static/css/2.66cbc4d4.chunk.css.map",
+    "static/css/main.8533732e.chunk.css.map": "./static/css/main.8533732e.chunk.css.map",
+    "static/js/2.a1babf98.chunk.js.LICENSE.txt": "./static/js/2.a1babf98.chunk.js.LICENSE.txt",
+    "static/media/Do.100f0e48.mp3": "./static/media/Do.100f0e48.mp3",
+    "static/media/Do2.cf5fa77c.mp3": "./static/media/Do2.cf5fa77c.mp3",
+    "static/media/Dodiez.a1873c29.mp3": "./static/media/Dodiez.a1873c29.mp3",
+    "static/media/Fa.4edaa966.mp3": "./static/media/Fa.4edaa966.mp3",
+    "static/media/Fadiez.83efe0ad.mp3": "./static/media/Fadiez.83efe0ad.mp3",
+    "static/media/Lya.d19745e6.mp3": "./static/media/Lya.d19745e6.mp3",
+    "static/media/Lyadiez.ca4178db.mp3": "./static/media/Lyadiez.ca4178db.mp3",
+    "static/media/Mi.2be234e1.mp3": "./static/media/Mi.2be234e1.mp3",
+    "static/media/index.scss": "./static/media/Sigmar-Regular.daeeaca2.ttf",
+    "static/media/Re.e36fd4c8.mp3": "./static/media/Re.e36fd4c8.mp3",
+    "static/media/Rediez.6c856819.mp3": "./static/media/Rediez.6c856819.mp3",
+    "static/media/Si.3f3f290c.mp3": "./static/media/Si.3f3f290c.mp3",
+    "static/media/Sol.bbd23911.mp3": "./static/media/Sol.bbd23911.mp3",
+    "static/media/Soldiez.96e130c1.mp3": "./static/media/Soldiez.96e130c1.mp3",
+    "static/media/empty__search.91d0ca31.png": "./static/media/empty__search.91d0ca31.png",
+    "static/media/SongPage.scss": "./static/media/link.e1f99ac4.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8c9895b1.js",
-    "static/js/2.786b40d7.chunk.js",
-    "static/css/main.91213040.chunk.css",
-    "static/js/main.6caf137f.chunk.js"
+    "static/css/2.66cbc4d4.chunk.css",
+    "static/js/2.a1babf98.chunk.js",
+    "static/css/main.8533732e.chunk.css",
+    "static/js/main.8765a978.chunk.js"
   ]
 }
