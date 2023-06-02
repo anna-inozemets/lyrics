@@ -1,5 +1,4 @@
 import React, {
-  useCallback,
   useContext,
   useEffect,
   useState,
@@ -50,10 +49,10 @@ export const SearchScreen: React.FC = () => {
     }
   }, []);
 
-  const handleSearchButton = useCallback(() => {
+  const handleSearchButton = () => {
     setSongsData([]);
     loadSongsData();
-  }, []);
+  };
 
   const customClass = classNames({
     'Toastify__toast-theme--dark': isDarkTheme,
