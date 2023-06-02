@@ -43,7 +43,6 @@ export const getSongInfo = async (songId: number): Promise<SongPageInfo> => {
       apple_music_player_url: '',
       artist_names: '',
       title: '',
-      lyrics_state: false,
       song_art_image_thumbnail_url: '',
       header_image_thumbnail_url: '',
       release_date_for_display: '',

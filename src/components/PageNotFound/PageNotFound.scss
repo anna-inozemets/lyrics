@@ -1,0 +1,167 @@
+@import '../../utils/_variables.scss';
+
+.piano__container {
+  &-title {
+    margin-top: 15px;
+    font-size: 28px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.piano {
+  position: relative;
+  display: flex;
+  height: 330px;
+  width: max-content;
+  max-width: 100%;
+  margin: 35px auto 0;
+
+  &__button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    width: 65px;
+    padding-bottom: 15px;
+    background-color: $white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid $dark-dark-blue;
+    transition: all 0.4s;
+    outline: none;
+
+    &.active {
+      transform: scale(1.02) translateY(3px);
+    }
+
+    &:hover {
+      box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &__additional-buttons {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 39px;
+  }
+
+  &__addition-button {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 200px;
+    width: 55px;
+    padding-bottom: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid $dark-dark-blue;
+    background-color: $black;
+    color: $white;
+    outline: none;
+    transition: all 0.4s;
+
+    &.active {
+      transform: scale(1.02) translateY(3px);
+    }
+
+    &:nth-child(2) {
+      left: 10px;
+    }
+
+    &:nth-child(3) {
+      left: 85px;
+    }
+
+    &:nth-child(4) {
+      left: 95px;
+    }
+
+    &:nth-child(5) {
+      left: 105px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .piano {
+    height: 280px;
+    margin: 25px auto 0;
+  
+    &__button {
+      width: 50px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  
+    &__additional-buttons {
+      left: 30px;
+    }
+  
+    &__addition-button {
+      height: 180px;
+      width: 40px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+  
+      &:nth-child(2) {
+        left: 10px;
+      }
+  
+      &:nth-child(3) {
+        left: 70px;
+      }
+  
+      &:nth-child(4) {
+        left: 80px;
+      }
+  
+      &:nth-child(5) {
+        left: 90px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .piano {
+    height: 230px;
+  
+    &__button {
+      width: 30px;
+    }
+  
+    &__additional-buttons {
+      left: 18px;
+    }
+  
+    &__addition-button {
+      height: 150px;
+      width: 25px;
+  
+      &:nth-child(2) {
+        left: 6px;
+      }
+  
+      &:nth-child(3) {
+        left: 40px;
+      }
+  
+      &:nth-child(4) {
+        left: 45px;
+      }
+  
+      &:nth-child(5) {
+        left: 50px;
+      }
+    }
+  }
+}

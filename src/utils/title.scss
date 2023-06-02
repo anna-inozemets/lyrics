@@ -6,4 +6,17 @@
   &.dark {
     color: $light-blue;
   }
+
+  &--not-found-page {
+    margin-top: 15px;
+    font-size: 40px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 20px;
+    }
+  }
 }

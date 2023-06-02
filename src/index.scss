@@ -30,11 +30,41 @@ body {
   min-height: 100vh;
   font-family: 'Sigmar', cursive;
   font-size: 16px;
+  cursor: url(https://cdn.custom-cursor.com/db/5920/32/material-custom-cursor.png) , default;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: $light-blue;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $dark-blue;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: $dark-dark-blue;
+  }
+}
+
+body.dark {
+  &::-webkit-scrollbar {
+    background-color: $dark-blue;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $light-blue;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: $light-dark-blue;
+  }
 }
 
 input, button {
   font-family: 'Sigmar', cursive;
   font-size: 16px;
+  cursor: url(https://cdn.custom-cursor.com/db/5919/32/material-custom-pointer.png) , pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,4 +76,25 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: url(https://cdn.custom-cursor.com/db/5919/32/material-custom-pointer.png) , pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 32px;
+  }
 }

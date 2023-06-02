@@ -1,0 +1,36 @@
+@import '../../utils/variables';
+
+.history-screen__content {
+  &-loader {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    display: block;
+    padding: 5px 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    border-radius: 5px;
+    border: none;
+    cursor: url(https://cdn.custom-cursor.com/db/5919/32/material-custom-pointer.png) , pointer;
+    background-color: $dark-dark-blue;
+    color: $white;
+
+    &.dark {
+      background-color: $light-blue;
+      color: $dark-dark-blue;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .history-screen__content button {
+    padding: 3px 10px;
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+}

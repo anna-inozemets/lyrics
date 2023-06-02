@@ -3,6 +3,13 @@
 .song-page__content {
   margin-top: 15px;
 
+  &-loader {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &-additional {
     display: flex;
     justify-content: center;
@@ -83,5 +90,20 @@
     a.dark::before {
       background-image: url('../../images/link--light-color.svg');
     }
+  }
+}
+
+.Toastify__toast,
+.Toastify__toast button {
+  cursor: url(https://cdn.custom-cursor.com/db/5919/32/material-custom-pointer.png) , pointer !important;
+}
+
+.Toastify__toast.Toastify__toast-theme--dark {
+  background-color: $dark-dark-blue;
+  color: $light-blue;
+
+  & > .Toastify__close-button--light {
+    color: $light-blue;
+    opacity: 1;
   }
 }

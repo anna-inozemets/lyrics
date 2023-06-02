@@ -66,7 +66,7 @@
     border-radius: 10px;
     border: solid 1px $dark-violet;
     background-color: rgba(255, 255, 255, 0.75);
-    cursor: pointer;
+    cursor: url(https://cdn.custom-cursor.com/db/5919/32/material-custom-pointer.png) , pointer;
     transition: background-color 0.4s ease, color 0.4s ease;
 
     &:hover {
@@ -93,5 +93,85 @@
       border: solid 1px $light-violet;
       box-shadow: 0 0 10px 2px rgba(205, 180, 219, 0.8);
     }
+  }
+}
+
+.clear-input-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  border: 1px solid $dark-violet;
+  background-color: $white;
+  border-radius: 50%;
+  cursor: url(https://cdn.custom-cursor.com/db/5919/32/material-custom-pointer.png) , pointer;
+  transition: all 0.4s;
+
+  & svg path {
+    stroke: $dark-violet;
+    transition: all 0.4s;
+  }
+
+  &:hover {
+    background-color: $dark-violet;
+
+    & svg path {
+      stroke: $white;
+    }
+  }
+}
+
+.clear-input-button.dark {
+  padding: 3px;
+  border: 1px solid $light-violet;
+  background-color: $dark-dark-blue;
+
+  & svg path {
+    stroke: $light-violet;
+  }
+
+  &:hover {
+    background-color: $light-violet;
+
+    & svg path {
+      stroke: $dark-dark-blue;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    &__input-wrapper {
+      flex: 1;
+      width: 50%;
+    }
+
+    &__input {
+      padding: 7px;
+    }
+
+    &__button {
+      padding: 7px 0;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    margin-top: 25px;
+  }
+
+  .clear-input-button {
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
   }
 }

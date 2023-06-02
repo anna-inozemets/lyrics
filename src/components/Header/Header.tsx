@@ -1,11 +1,15 @@
 import React from 'react';
 import './Header.scss';
 import { HomeIcon } from '../HomeIcon';
+import { BackLink } from '../BackLink';
 import { ThemeSwitcher } from '../ThemeSwitcher';
 
-export const Header = () => (
+export const Header: React.FC = () => (
   <header className="header">
-    <HomeIcon />
+    <div className="header__link-wrapper">
+      <HomeIcon />
+      <BackLink />
+    </div>
     <ThemeSwitcher />
   </header>
 );

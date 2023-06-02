@@ -1,0 +1,26 @@
+@import '../../utils/variables';
+
+.button-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: url(https://cdn.custom-cursor.com/db/5919/32/material-custom-pointer.png) , pointer;
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  & svg {
+    fill: $dark-dark-blue;
+  }
+
+  &.dark svg {
+    fill: $light-blue;
+  }
+}

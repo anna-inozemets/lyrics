@@ -20,12 +20,12 @@ export const App: React.FC = () => {
         <Routes>
           <Route path="*" element={<PageNotFound />} />
           <Route path="/" element={<MainScreen />} />
+          <Route path="/home" element={<Navigate to="/" replace />} />
           <Route path="songs">
             <Route index element={<SearchScreen />} />
             <Route path=":id" element={<SongPage />} />
           </Route>
           <Route path="history" element={<HistoryScreen />} />
-          <Route path="/home" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
     </div>

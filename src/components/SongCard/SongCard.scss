@@ -41,10 +41,30 @@
     background-color: $dark-dark-blue;
     color: $white;
     text-decoration: none;
+    transition: all 0.4s;
 
     &.dark {
       background-color: $light-blue;
       color: $dark-dark-blue;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .song__card {
+    &__title {
+      margin-bottom: 5px;
+      font-size: 12px;
+    }
+
+    &__link {
+      padding: 3px 10px;
+      border-radius: 5px;
+      font-size: 12px;
     }
   }
 }
